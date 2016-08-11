@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* header */
+
+#banner {
+	background-image: url("../img/header.jpg");
+	background-size: cover;
+	background-position-y: 25%; 
+	height: 200px;
+	position: relative;
+}
+
+.barra {
+	background-color: white;
+}
+
+.caja-principal {
+	padding: 15%;
+}
+
+h1 {
+	border-bottom: 0px;
+}
+
+.boton-head {
+	border-radius: 25px;
+	width: 200px;
+}
+
