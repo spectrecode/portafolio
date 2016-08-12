@@ -13,7 +13,7 @@
 	<body>
 		<header id="banner">
 			<nav class="navbar navbar-default navbar-fixed-top barra">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">	
 							<span class="sr-only">toggle navigation</span>
@@ -23,19 +23,19 @@
 						</button>
 						<a href="#" class="navbar-brand titulo">MI PORTAFOLIO</a>
 					</div>
-					<div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+					<div id="navbar" class="navbar-collapse collapse" aria-expanded="true">
 						<ul class="barra nav navbar-nav navbar-right alert-link">
 							<li>
-								<a href="#" class="list-group-item.disabled">SOBRE MI</a>
+								<a href="#about" class="list-group-item.disabled">SOBRE MI</a>
 							</li>
 							<li>
-								<a href="#" class="list-group-item.disabled">SERVICIOS</a>
+								<a href="#servicios" class="list-group-item.disabled">SERVICIOS</a>
 							</li>
 							<li>
-								<a href="#">MIS TRABAJOS</a>
+								<a href="#trabajos">MIS TRABAJOS</a>
 							</li>
 							<li>
-								<a href="#">CONTACTAME</a>
+								<a href="#contactame">CONTACTAME</a>
 							</li>
 						</ul>		
 					</div>
@@ -47,14 +47,14 @@
 					<hr>
 					<p class="h4 list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-					<button class="btn btn-warning boton-head">
+					<button class="btn btn-warning">
 						CONOCE MÁS
 					</button>
 				</div>
 			</div>
 		</header>
 		<section>
-			<article class="jumbotron first">
+			<article class="jumbotron first" id="about">
 				<div class="container text-center">
 					<h2>SOBRE Mí</h2>
 					<hr class="separador-blanco">
@@ -64,8 +64,8 @@
 					consequat.</p>
 				</div>
 			</article>
-			<article>
-				<div class="container text-center second">
+			<article id="servicios">
+				<div class="container text-center servicios">
 					<h2>SERVICIOS</h2>
 					<hr>
 					<div class="row ">
@@ -97,50 +97,62 @@
 				</div>
 			</article>
 		</section>
-		<section>
-			<div class="container">
+		<section id="trabajos">
+			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-lg-4 cuadro">
 						<img src="img/1.jpg" class="img-responsive">
 					</div>
-					<div class="col-lg-4 ">
+					<div class="col-lg-4 cuadro">
 						<img src="img/2.jpg" class="img-responsive">
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 cuadro">
 						<img src="img/3.jpg" class="img-responsive">
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-4">
-						<img src="img/1.jpg" class="img-responsive">
+					<div class="col-lg-4 cuadro">
+						<img src="img/4.jpg" class="img-responsive">
 					</div>
-					<div class="col-lg-4">
-						<img src="img/2.jpg" class="img-responsive">
+					<div class="col-lg-4 cuadro">
+						<img src="img/5.jpg" class="img-responsive">
 					</div>
-					<div class="col-lg-4">
-						<img src="img/3.jpg" class="img-responsive">
+					<div class="col-lg-4 cuadro">
+						<img src="img/6.jpg" class="img-responsive">
 					</div>
 				</div>
 			</div>
-			<div class="jumbotron">
+			<div class="jumbotron second">
 				<div class="container text-center">
-					<p>Si quieres saber más de mi proyecto visita mi Github</p>
-					<button class="btn btn-warning boton-head">
+					<p class="datos">Si quieres saber más de mi proyecto revisa mi Github</p>
+					<button class="btn btn-warning boton-white">
 						CONOCE MÁS
 					</button>
 				</div>
 			</div>
 		</section>
-		<footer>
-			<div class="container text-center">
-				<h2>CONTÁCTAME</h2>
-				<br>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod</p>
-				<div class="row">
-					<div class="cal-lg-6 fa fa-phone fa-5x"></div>
-					<div class="cal-lg-6 fa-mail-forward fa"></div>
+		<footer id="contactame">
+			<div class="jumbotron text-center">
+				<div class="container">
+					<h2>CONTÁCTAME</h2>
+					<hr>
+					<p class="h3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod</p>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class=" fa fa-phone fa-5x">
+								<p>123-456-789</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class=" fa-envelope-o fa fa-5x">
+								<p>
+									<a href="#" class="correo">katy@laboratoria.la</a>
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
