@@ -10,24 +10,72 @@
 	background-image: url("../img/header.jpg");
 	background-size: cover;
 	background-position-y: 25%; 
-	height: 200px;
 	position: relative;
 }
 
 .barra {
-	background-color: white;
+	font-weight: bold;
 }
 
-.caja-principal {
-	padding: 15%;
+.titulo.navbar-brand {
+	color: #F05F40;
 }
 
 h1 {
-	border-bottom: 0px;
+	font-weight: bold;
+	padding-bottom: 2%;
+}
+
+hr {
+	width: 60px;
+    height: 3px;
+    background-color: #F05F40;
+    margin-right: 50%;
+    margin-left: 45%;
+    border-top: 0px; 
+}
+
+.caja-principal p {
+	padding-top: 2%;
+}
+
+.caja-principal {
+	padding: 13% 15%;
+	color: white;
 }
 
 .boton-head {
 	border-radius: 25px;
-	width: 200px;
+	width: 150px;
+	height: 50px;
+	margin: 5%;
+	background-color: #F05F40;
+	font-weight: bold;
+	border:none;
+}
+
+/* section 1 article */
+
+.jumbotron.first{
+	background-color: #F05F40;
+	padding: 5% 17%;
+	color: white;
+}
+
+hr.separador-blanco {
+	width: 60px;
+    height: 3px;
+    background-color: white;
+    margin-right: 50%;
+    margin-left: 45%;
+    border-top: 0px; 
+}
+
+.first p {
+	font-size: 18px;
+}
+
+.second {
+	padding: 3% 0% 5% 0%;
 }
 

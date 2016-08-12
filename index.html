@@ -3,40 +3,49 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Portafolio</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="fonts/font-awesome.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="index.html">
 	</head>
 	<body>
 		<header id="banner">
-			<div class="container">
-				<nav class="navbar navbar-default navbar-fixed-top barra">
-					<div class="container">
-						<div class="navbar-header">
-							<ul class="nav navbar-nav">
-								<li>
-									<a href="#">MI PORTAFOLIO</a>
-								</li>
-							</ul>
-							<button type="button" class="navbar-toggle collapsed">
-								
-							</button>
-						<ul class="nav navbar-nav navbar-right">
+			<nav class="navbar navbar-default navbar-fixed-top barra">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">	
+							<span class="sr-only">toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#" class="navbar-brand titulo">MI PORTAFOLIO</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+						<ul class="barra nav navbar-nav navbar-right alert-link">
 							<li>
-								<a href="#">SOBRE MI</a>
-								<a href="#">SERVICIOS</a>
+								<a href="#" class="list-group-item.disabled">SOBRE MI</a>
+							</li>
+							<li>
+								<a href="#" class="list-group-item.disabled">SERVICIOS</a>
+							</li>
+							<li>
 								<a href="#">MIS TRABAJOS</a>
+							</li>
+							<li>
 								<a href="#">CONTACTAME</a>
 							</li>
-						</ul>
-						</div>
+						</ul>		
 					</div>
-				</nav>
-			</div>
+				</div>
+			</nav>
 			<div class="container">
 				<div class="caja-principal text-center">
-					<h1 class="">HOLA, MI NOMBRE ES KATY SOY CODER DE LABORATORIA</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					<h1>HOLA, MI NOMBRE ES KATY SOY CODER DE LABORATORIA</h1>
+					<hr>
+					<p class="h4 list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 					<button class="btn btn-warning boton-head">
 						CONOCE MÁS
@@ -44,5 +53,96 @@
 				</div>
 			</div>
 		</header>
+		<section>
+			<article class="jumbotron first">
+				<div class="container text-center">
+					<h2>SOBRE Mí</h2>
+					<hr class="separador-blanco">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</article>
+			<article>
+				<div class="container text-center second">
+					<h2>SERVICIOS</h2>
+					<hr>
+					<div class="row ">
+						<div class="col-lg-3">
+							<div class="fa-diamond fa-4x fa"></div>
+							<h3>Desarrollo de plantillas</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p>
+						</div>
+						<div class="col-lg-3 text-center">
+							<div class="fa-paper-plane fa-4x fa"></div>
+							<h3>Campañas de Mailing</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p>
+						</div>
+						<div class="col-lg-3 text-center">
+							<div class="fa-newspaper-o fa-4x fa"></div>
+							<h3>Full websites</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p>
+						</div>
+						<div class="col-lg-3 text-center">
+							<div class="fa-heart fa-4x fa"></div>
+							<h3>Aplicaciones android</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<img src="img/1.jpg" class="img-responsive">
+					</div>
+					<div class="col-lg-4 ">
+						<img src="img/2.jpg" class="img-responsive">
+					</div>
+					<div class="col-lg-4">
+						<img src="img/3.jpg" class="img-responsive">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<img src="img/1.jpg" class="img-responsive">
+					</div>
+					<div class="col-lg-4">
+						<img src="img/2.jpg" class="img-responsive">
+					</div>
+					<div class="col-lg-4">
+						<img src="img/3.jpg" class="img-responsive">
+					</div>
+				</div>
+			</div>
+			<div class="jumbotron">
+				<div class="container text-center">
+					<p>Si quieres saber más de mi proyecto visita mi Github</p>
+					<button class="btn btn-warning boton-head">
+						CONOCE MÁS
+					</button>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container text-center">
+				<h2>CONTÁCTAME</h2>
+				<br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod</p>
+				<div class="row">
+					<div class="cal-lg-6 fa fa-phone fa-5x"></div>
+					<div class="cal-lg-6 fa-mail-forward fa"></div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
